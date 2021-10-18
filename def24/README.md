@@ -1,3 +1,31 @@
+This is an React Application that shows cities and its informations about weather. This app made for DEF24 job application.
+
+I work with React and Redux for state management. I used redux-thunk and redux-persist for permanent states.
+
+This project has two main pages: Home and About.
+
+Homepage includes a search bar. With this search bar you can filter a city with name. If it is not included,
+an alert says you the error. For this alert I added sweetalert2 package(yarn add sweetalert2).
+
+Secondly this homepage includes a refresh button with another searchbar. Refresh button can be clickable 60 seconds
+after your last click and it refreshes the information of my cities. Also, another search bar again searches a city but in out city list. If it does not contain this city, shows an error.
+
+At the end of the page you can see all cities that I added from first searchbar and footer of the page You can also delete a city from your list. Using the footer, you can go second page: About
+
+In about page there is the name of the app and its version. Also, you can see footer at the end of the page.
+
+In App.js I managed the routes of my app. As you know there is two different page. So, it includes two different routes.
+
+In index.js it includes my store and persistor. Store is for redux, redux-thunk and persistor for redux-persist. It makes my store permanent like local storage.
+
+My application has five different folders in my src folder: apis, assets, components, redux and views.
+
+-In apis folder I hold my weather api instance with axios and apiKey for weather API.
+-In assets folder I hold css files and images.
+-In components folder there are two different file: Footer and SearchBar. I added my searchbar for preventing the confusion. It is a container.
+-In redux folder, I manage my redux as actions, contants, reducers and store. I requested API in actions and manage in reducers.
+In views folder, there are my pages as you know home and about pages.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
